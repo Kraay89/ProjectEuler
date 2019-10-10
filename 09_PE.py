@@ -7,10 +7,10 @@ def perfSquare(n):
     return m.sqrt(n).is_integer()
 
 stop = False
-for a in xrange(1000, 2, -1):
+for a in range(1000, 2, -1):
     if stop:
         break
-    for b in xrange(1000, 3, -1):
+    for b in range(1000, 3, -1):
         if stop:
             break
         c_squared = a**2+b**2
@@ -18,6 +18,6 @@ for a in xrange(1000, 2, -1):
             c = int(m.sqrt(c_squared))
             if a+b+c == 1000:
                 stop = True
-                print a,b,c,a+b+c, a*b*c
+                print (a,b,c,a+b+c, a*b*c)
 
-print 'Time passed: ', time.time()-t0
+print ('Time passed: ', time.time()-t0)

@@ -18,8 +18,8 @@ def eratosthenes():
 i = 0
 x = eratosthenes()
 while i<10001:
-    a = x.next()
+    a = next(x)
     i+=1
-print a
+print (a)
     
     

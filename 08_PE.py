@@ -24,13 +24,12 @@ inputnumbers = """73167176531330624919225119674426574742355349194934
 inputnumbers = ''.join(i for i in inputnumbers.split())
 numbers = re.findall(r'(?=([^0]{13}))', inputnumbers, re.MULTILINE)
 
-print len(numbers)
+print (len(numbers))
 
 def product(stringnum):
     stringnum = ''.join(i for i in stringnum.split())
     product = 1
     for i in stringnum:
-        print i
         product *=int(i)
     
     return product
@@ -38,7 +37,6 @@ def product(stringnum):
 max = 0
 for i in numbers:
     new = product(i)
-    print new
     if new > max:
         max = new
         #print "Bigger!"
@@ -48,5 +46,5 @@ for i in numbers:
 #         print "Not Bigger!"
 #     print "========================="
     
-print max
+print (max)
     
